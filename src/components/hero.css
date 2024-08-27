@@ -1,0 +1,57 @@
+video{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+
+}
+
+
+.hero-heading{
+    font-weight: bold;
+    font-size: 70px;
+    
+}
+.hero-container{
+    display: flex;
+    /* background:url('img-home.jpg') center center/cover no-repeat ; */
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+
+}
+
+/* .hero-btn:hover{
+    background-color: transparent !important;
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+} */
+.hero-container p{
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn-container button{
+    margin: 10px;
+}
+
+@media screen and (max-width:800px){
+    .hero-heading{
+        font-size: 40px;
+    }
+    .hero-container{
+        height: 90vh;
+    }
+    .card-title{
+        font-size: 25px;
+    }
+  
+}

@@ -1,0 +1,14 @@
+
+.footer{
+    background-color: rgb(31, 30, 30) !important;
+    
+}
+.footer a{
+    text-decoration: none;
+}
+
+.socials-section{
+    background-color: #6452ce !important;
+    justify-content: space-around;
+
+}

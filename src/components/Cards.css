@@ -1,0 +1,94 @@
+.section_2 {
+    background-color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Added padding for spacing */
+}
+.section2-heading{
+    margin: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(82, 82, 209);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 50px;
+
+    width: 100%;
+    row-gap: 100px;
+    max-width: 1200px; /* Set a max-width for better control */
+    padding: 20px;
+
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card {
+    background-color: #f9f9f9; /* Example background color */
+    border:none;
+    border-radius: 8px;
+    -webkit-box-shadow: 17px 34px 46px -20px rgba(0,0,0,0.75);
+-moz-box-shadow: 17px 34px 46px -20px rgba(0,0,0,0.75);
+box-shadow: 17px 34px 46px -20px rgba(0,0,0,0.75);
+    margin: auto; /* Centers the card within its grid cell */
+    width: 100%; /* Ensures the card takes full width of the grid cell */
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+
+}
+.card .btn{
+    background-color: #6452ce !important;
+    border: none !important;
+}
+.card:hover{
+    box-shadow: none;
+
+}
+
+.card-body {
+    position: relative;
+    z-index: 10;
+}
+.card_img{
+    overflow: hidden;
+    position: relative;
+}
+
+.card_img img {
+    transition: transform 0.4s ease;
+    object-fit: cover;
+
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    height: 18rem;
+     /* Ensures the zoom happens from the center */
+}
+
+.card_img img:hover {
+    transform: scale(1.1); /* Zooms the image slightly on hover */
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width:800px){
+    .section2-heading{
+        text-align: center;
+        font-size: 40px;
+        margin: 20px;
+    }
+
+
+    .cards{
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+
+    }
+}
